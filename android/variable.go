@@ -98,7 +98,7 @@ type variableProperties struct {
 		}
 
                 // include custom variables
-                *android.Product_variables
+                Custom android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -176,7 +176,7 @@ type productVariables struct {
 	BoardUsesQTIHardware *bool `json:",omitempty"`
 
         // include custom variables
-        *android.ProductVariables
+        Custom android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
